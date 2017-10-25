@@ -1,5 +1,5 @@
-# laboratory
-my little laboratory
+# spring-mvc-lab
+spring-mvc
 
 ### environments
 - maven
