@@ -3,7 +3,5 @@ spring-mvc
 
 ### environments
 - maven
-- jdk 9
-- tomcat 9
-- eclipse
+- jdk9
 - spring5
