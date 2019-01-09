@@ -20,7 +20,6 @@ import org.springframework.web.client.RestTemplate;
  * @author fixalot
  */
 public class RestTemplateTest {
-	@SuppressWarnings("unused")
 	private static final Logger logger = LoggerFactory.getLogger(RestTemplateTest.class);
 
 	private static final String alphabet = "https://google.com";
