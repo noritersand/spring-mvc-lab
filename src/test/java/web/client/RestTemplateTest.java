@@ -24,28 +24,57 @@ public class RestTemplateTest {
 
 	private static final String alphabet = "https://google.com";
 	private static final String myLocalServer = "http://localhost:8080/http-test/you-should-be-here.data";
-	
-	@Test
-	public void simpleGetRequest() {
-		RestTemplate restTemplate = new RestTemplate();
-		ResponseEntity<String> response = restTemplate.getForEntity(alphabet, String.class);
+
+	/**
+	 * 구글에 테스트
+	 * 
+	 * @author fixalot
+	 */
+//	@Test
+	public void simpleGetMethodRequest() {
+		RestTemplate template = new RestTemplate();
+		ResponseEntity<String> response = template.getForEntity(alphabet, String.class);
 		Assert.assertEquals(HttpStatus.OK, response.getStatusCode());
 	}
-	
+
 	/**
 	 * 로컬 서버 띄워야 함.
 	 * 
 	 * @author fixalot
 	 */
 //	@Test
-	public void postRequest() {
-		RestTemplate restTemplate = new RestTemplate();
+	public void getMethodRequestToLocal() {
+		RestTemplate template = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-		MultiValueMap<String, String> map= new LinkedMultiValueMap<String, String>();
+		MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
+		map.add("email", "first.last@example.com");
+
+		StringBuilder url = new StringBuilder();
+		url.append(myLocalServer);
+		url.append("?email=first.last@example.com");
+		url.append("&message=한글메시징징");
+
+		logger.info(url.toString());
+
+		String responseText = template.getForEntity(url.toString(), String.class).getBody();
+		logger.debug(responseText);
+	}
+
+	/**
+	 * 로컬 서버 띄워야 함.
+	 * 
+	 * @author fixalot
+	 */
+//	@Test
+	public void postMethodRequestToLocal() {
+		RestTemplate template = new RestTemplate();
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+		MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
 		map.add("email", "first.last@example.com");
 		HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
-		ResponseEntity<String> response = restTemplate.postForEntity(myLocalServer, request , String.class );
+		ResponseEntity<String> response = template.postForEntity(myLocalServer, request, String.class);
 		logger.debug(response.toString());
 	}
 }
