@@ -30,7 +30,7 @@ public class RestTemplateTest {
 	 * 
 	 * @author fixalot
 	 */
-//	@Test
+	@Test
 	public void simpleGetMethodRequest() {
 		RestTemplate template = new RestTemplate();
 		ResponseEntity<String> response = template.getForEntity(alphabet, String.class);
