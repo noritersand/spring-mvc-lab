@@ -1,5 +1,5 @@
-# spring-mvc-lab
-spring-mvc
+# spring-lab
+spring
 
 ### environments
 - maven
