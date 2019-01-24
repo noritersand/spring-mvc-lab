@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>noritersand</groupId>
-	<artifactId>spring-mvc-lab</artifactId>
+	<artifactId>spring-lab</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>spring-mvc-lab</name>
-	<url>https://github.com/noritersand/spring-mvc-lab</url>
+	<name>spring-lab</name>
+	<url>https://github.com/noritersand/spring-lab</url>
 
 	<properties>
 		<encoding>UTF-8</encoding>
@@ -20,7 +20,7 @@
 
 	<!-- 빌드 -->
 	<build>
-		<finalName>spring-mvc-lab</finalName>
+		<finalName>spring-lab</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
