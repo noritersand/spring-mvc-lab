@@ -3,5 +3,5 @@ spring
 
 ### environments
 - maven
-- jdk9
+- jdk10
 - spring5

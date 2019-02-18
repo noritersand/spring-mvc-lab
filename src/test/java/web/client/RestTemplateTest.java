@@ -22,7 +22,7 @@ import org.springframework.web.client.RestTemplate;
 public class RestTemplateTest {
 	private static final Logger logger = LoggerFactory.getLogger(RestTemplateTest.class);
 
-	private static final String alphabet = "https://google.com";
+	private static final String alphabet = "http://google.com";
 	private static final String myLocalServer = "http://localhost:8080/http-test/you-should-be-here.data";
 
 	/**
