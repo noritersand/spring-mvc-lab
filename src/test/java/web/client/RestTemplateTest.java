@@ -23,7 +23,7 @@ public class RestTemplateTest {
 	private static final Logger logger = LoggerFactory.getLogger(RestTemplateTest.class);
 
 	private static final String alphabet = "http://google.com";
-	private static final String myLocalServer = "http://localhost:8080/http-test/you-should-be-here.data";
+	private static final String myLocalServer = "http://localhost:8080/test/http/you-should-be-here.data";
 
 	/**
 	 * 구글에 테스트

@@ -9,7 +9,7 @@
 <h1>LABORATORY</h1>
 <h2>Index</h2>
 <ul>
-	<li><a href="/test/fileupload/with-spring.view">spring multipart</a></li>
+	<li><a href="/test/spring/spring-fileupload-test.view">spring multipart</a></li>
 </ul>
 </body>
 </html>

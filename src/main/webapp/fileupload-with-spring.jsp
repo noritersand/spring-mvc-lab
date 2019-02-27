@@ -7,7 +7,7 @@
 </head>
 <body>
 <h2>file upload - spring multipart</h2>
-<form method="post" action="/test/fileupload/upload-with-spring.data" enctype="multipart/form-data">
+<form method="post" action="/test/spring/upload-file-with-spring.data" enctype="multipart/form-data">
 	<input type="text" name="title" placeholder="파일제목" /><br>
 	<input type="file" name="uploadfile" /><br>
 	<input type="file" name="uploadfile2" /><br>
