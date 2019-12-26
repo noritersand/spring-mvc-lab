@@ -1,18 +1,18 @@
-
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-/**
- * 스프링과 함께하는 파일 업로드 시간!
- * 
- * @since 2017-08-11
- * @author fixalot
- */
-public class FileUploadController {
-	@SuppressWarnings("unused")
-	private static final Logger logger = LoggerFactory.getLogger(FileUploadController.class);
-	
+//
+//
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
+//
+///**
+// * 스프링과 함께하는 파일 업로드 시간!
+// * 
+// * @since 2017-08-11
+// * @author fixalot
+// */
+//public class FileUploadController {
+//	@SuppressWarnings("unused")
+//	private static final Logger logger = LoggerFactory.getLogger(FileUploadController.class);
+//	
 //	@UrlMapping("/test/spring/spring-fileupload-test.view")
 //	public View drawWithSpring(HttpServletRequest request, HttpServletResponse response) {
 //		return new View(request);
@@ -54,4 +54,4 @@ public class FileUploadController {
 //		
 //		return json;
 //	}
-}
+//}
