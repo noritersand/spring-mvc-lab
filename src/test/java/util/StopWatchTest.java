@@ -45,8 +45,8 @@ public class StopWatchTest {
 
 		TaskInfo info = watch.getLastTaskInfo();
 		Assert.assertEquals("third", info.getTaskName());
-		logger.debug(String.valueOf(info.getTimeMillis()));
-		logger.debug(String.valueOf(info.getTimeSeconds()));
+		logger.debug("{}", info.getTimeMillis());
+		logger.debug("{}", info.getTimeSeconds());
 	}
 
 	private long doUselessThing() {
