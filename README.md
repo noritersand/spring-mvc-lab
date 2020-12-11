@@ -1,6 +1,6 @@
-# spring-lab
+# spring-test
 
-spring lab.
+SpringMVC 외 유틸성 라이브러리 테스트용 프로젝트
 
 #### environments
 - maven
