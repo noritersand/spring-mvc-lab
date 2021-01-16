@@ -8,7 +8,9 @@ import org.springframework.util.StopWatch;
 import org.springframework.util.StopWatch.TaskInfo;
 
 /**
- * 
+ * org.springframework.util.StopWatch 테스트 슈트<br>
+ * 아파치의 org.apache.commons.lang3.time.StopWatch가 더 좋으니 그걸 쓰자.<br>
+ * 스프링꺼는 나노초가 안나옴.
  * 
  * @since 2017-07-27
  * @author fixalot
